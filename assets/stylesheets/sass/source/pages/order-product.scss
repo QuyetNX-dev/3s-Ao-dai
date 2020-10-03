@@ -1,0 +1,75 @@
+.order-product{
+    color: #333333;
+    .form-wrap{
+        display: flex;
+        margin-bottom: 60px;
+        .form-input{
+            flex-grow: 1;
+            padding-right: 53px;
+            .form-input__title{
+                text-transform: uppercase;
+                font-size: 14px;
+                padding-bottom: 8px;
+                border-bottom:solid 1px #333333;
+                width: max-content;
+                font-weight: 600;
+                margin-bottom: 37px;
+            }
+            .form-input__item{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 30px;
+                .form-input__item--title{
+                    font-size: 14px;
+                    width: percentage(165/750)
+                }
+                input{
+                    padding: 15px;
+                    display: block;
+                    flex-grow: 1;
+                    outline: 0;
+                    border: none;
+                    background-color: #fafafa;
+                }
+            }
+        }
+        .card-order{
+            padding: 21px;
+            border: 1px solid rgba(89, 89, 89, 0.3);
+            font-size: 14px;
+            width: percentage(405/1140);
+            height: max-content;
+            .card-order__title{
+                font-weight: 600;
+                padding-bottom: 8px;
+                text-transform: uppercase;
+                border-bottom:solid 1px #333333 ;
+                width: max-content;
+                margin-bottom: 30px;
+            }
+            .card-order__mony{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                // .card-order__mony--leef{
+
+                // }
+                // .card-order__mony--right{
+
+                // }
+            }
+            .card-order__total-bill{
+                padding-top: 28px;
+                border-top: 0.5px solid rgba(51, 51, 51, 0.3);;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .card-order__total-bill--right{
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

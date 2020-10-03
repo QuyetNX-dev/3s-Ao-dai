@@ -1,0 +1,15 @@
+.news{
+    .card_item{
+        display: block;
+        img{
+            display: block;
+            margin-bottom: 15px;
+        }
+        ._title{
+            font-size: 16px;
+            font-weight: 600;
+            color: #333333;
+        }
+        margin-bottom: 50px;
+    }
+}

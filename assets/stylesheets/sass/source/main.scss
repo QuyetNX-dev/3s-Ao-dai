@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains fonts, helpers, stylesheets default
+// -----------------------------------------------------------------------------
+
+@charset "UTF-8";
+
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
+
+@import "base/_default";
+
+@import "layout/general";
+
+@import "pages/home.scss";
+@import "pages/chi-tiet.scss";
+@import "pages/header.scss";
+@import "pages/footer.scss";
+@import "pages/tin-tuc.scss";
+@import "pages/tin-tuc-chi-tiet.scss";
+@import "pages/dong-phuc.scss";
+@import "pages/cam-on.scss";
+@import "pages/product.scss";
+@import "pages/order-product.scss";
+@import "pages/cart.scss"
+

@@ -1,0 +1,106 @@
+.menu-product{
+    margin-top: 36px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    li{
+        a{
+            display: block;
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-right: 50px;
+            &.active{
+                font-weight: 600;
+            }
+        }
+        
+        &:last-child{
+            a{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.product{
+    .product__item{
+        margin-bottom: 40px;
+        display: block;
+        .product__item--card{
+            position: relative;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .card-text{
+                // display: none;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                z-index: 2;
+                text-align: center;
+                padding: 0 90px;
+                color: #fff;
+                opacity: 0;
+                transition: 0.3s;
+                .card-text__title{
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+                .card-text__more{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-bottom: 4px;
+                    width: max-content;
+                    margin: auto;
+                    border-bottom: solid 1px #fff;
+                }
+            }
+            &::after{
+                content: "";
+                background: rgba(89, 89, 89, 0.35);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                bottom: 10px;
+                right: 10px;
+                z-index: 1;
+                opacity: 0;
+                top: 50px;
+                left: 50px;
+                right: 50px;
+                bottom: 50px;
+                transition: 0.3s;
+            }
+            &:hover{
+                .card-text{
+                    opacity: 1;
+                }
+                &::after{
+                    top: 10px;
+                    left: 10px;
+                    bottom: 10px;
+                    right: 10px;
+                    // z-index: 1;
+                    opacity: 1;
+                }
+            }
+        }
+        .product__item--subCard{
+            color: #333333;
+            .subCard__title{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .subCard__mony{
+                font-size: 14px;
+            }
+
+        }
+    }
+}

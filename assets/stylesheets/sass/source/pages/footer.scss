@@ -1,0 +1,86 @@
+footer{
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    .top_footer{
+        padding: 58px 0px 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .logo_footer{
+            width: percentage(200/1140);
+        }
+        .contact_footer{
+            width: percentage(398/1140);
+            a{
+                text-decoration: none;
+                display: block;
+                // display: flex;
+                color: #333333;
+                font-weight: 300;
+                font-size: 13px;
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 24px;
+                img{
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .collection_footer{
+            width: percentage(265/1140);
+            a{
+                text-decoration: none;
+                display: block;
+                // display: flex;
+                color: #333333;
+                font-weight: 300;
+                font-size: 13px;
+                position: relative;
+                // padding-left: 25px;
+                margin-bottom: 16px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .sosial_footer{
+            width: percentage(277/1140);
+            .mail_form{
+                input{
+                    display: block;
+                    height: 50px;
+                    width: 100%;
+                    padding-left: 16px;
+                    border: 1px solid rgba(51, 51, 51, 0.3);
+                    border-radius: 15px;
+                    outline: 0;
+                    margin-bottom: 23px;
+                }
+            }
+            .sosial_icon{
+                display: flex;
+                align-items: center;
+                a{
+                    display: block;
+                    margin-right: 20px;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .bot_footer{
+        border-top: 1px solid rgba(51, 51, 51, 0.3);
+        padding: 20px 0 25px 0;
+        text-align: center;
+        font-weight: 200;
+    }
+}
